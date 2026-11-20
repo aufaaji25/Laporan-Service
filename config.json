@@ -1,0 +1,7 @@
+{
+  "host": "localhost",
+  "user": "root",
+  "password": "",
+  "database": "laporan_service_db",
+  "port": 3306
+}
