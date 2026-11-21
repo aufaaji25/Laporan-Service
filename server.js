@@ -46,30 +46,16 @@ const DATA_FILE = getDataFilePath();
 // Data default jika file/db belum ada
 const DEFAULT_ADMIN = {
   id: 1,
-  username: 'aufaaji25',
-  password: '*Muff@ind0Komunikasi',
-  nama: 'Aufa Muliana Aji',
+  username: 'user',
+  password: 'user123',
+  nama: 'User',
   role: 'Admin'
 };
 
 const INITIAL_DATA = {
   users: [DEFAULT_ADMIN],
-  jenisAlat: [
-    { id: 1, nama: 'INF HOT 11 PLAY' },
-    { id: 2, nama: 'INF HOT 50I' },
-    { id: 3, nama: 'INF HOT 60I' },
-    { id: 4, nama: 'INF SMART 10' },
-    { id: 5, nama: 'INF SMART 20' },
-    { id: 6, nama: 'INF SMART 6+' },
-    { id: 7, nama: 'PC' },
-    { id: 8, nama: 'SAMSUNG' }
-  ],
-  kategoriLokasi: [
-    { id: 1, nama: 'Teknisi Limin' },
-    { id: 2, nama: 'Rutan Bangil' },
-    { id: 3, nama: 'Ponpes Salafiyah Sukorejo' },
-    { id: 4, nama: 'Hardware Andika' }
-  ],
+  jenisAlat: [],
+  kategoriLokasi: [],
   laporan: []
 };
 

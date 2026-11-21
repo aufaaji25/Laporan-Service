@@ -5,30 +5,16 @@
 
 const DEFAULT_ADMIN = {
   id: 1,
-  username: 'aufaaji25',
-  password: '*Muff@ind0Komunikasi',
-  nama: 'Aufa Muliana Aji',
+  username: 'user',
+  password: 'user123',
+  nama: 'User',
   role: 'Admin'
 };
 
 const INITIAL_DATA = {
   users: [DEFAULT_ADMIN],
-  jenisAlat: [
-    { id: 1, nama: 'INF HOT 11 PLAY' },
-    { id: 2, nama: 'INF HOT 50I' },
-    { id: 3, nama: 'INF HOT 60I' },
-    { id: 4, nama: 'INF SMART 10' },
-    { id: 5, nama: 'INF SMART 20' },
-    { id: 6, nama: 'INF SMART 6+' },
-    { id: 7, nama: 'PC' },
-    { id: 8, nama: 'SAMSUNG' }
-  ],
-  kategoriLokasi: [
-    { id: 1, nama: 'Teknisi Limin' },
-    { id: 2, nama: 'Rutan Bangil' },
-    { id: 3, nama: 'Ponpes Salafiyah Sukorejo' },
-    { id: 4, nama: 'Hardware Andika' }
-  ],
+  jenisAlat: [],
+  kategoriLokasi: [],
   laporan: []
 };
 
@@ -2003,7 +1989,7 @@ function createLaporanSheet(wb, sheetName, items, exportData, monthLabel) {
 
     ws.mergeCells(`I${currentRow}:J${currentRow}`);
     const cellNameRight = ws.getCell(`I${currentRow}`);
-    cellNameRight.value = sig.pembuatNama || 'Aufa Muliana Aji';
+    cellNameRight.value = sig.pembuatNama || 'User';
     cellNameRight.alignment = { horizontal: 'center', vertical: 'middle' };
     cellNameRight.font = { name: 'Times New Roman', size: 12, bold: true };
 
@@ -2049,7 +2035,7 @@ async function confirmExportToExcel() {
     mengetahuiNama: document.getElementById('exportMengetahuiNama').value.trim() || 'Wiyatmo Diarto, SE',
     mengetahuiJabatan: document.getElementById('exportMengetahuiJabatan').value.trim() || 'Manager Muffaindo',
     pembuatTitle: pembuatTitle,
-    pembuatNama: document.getElementById('exportPembuatNama').value.trim() || 'Aufa Muliana Aji',
+    pembuatNama: document.getElementById('exportPembuatNama').value.trim() || 'User',
     pembuatJabatan: document.getElementById('exportPembuatJabatan').value.trim() || 'Teknisi Software'
   };
 

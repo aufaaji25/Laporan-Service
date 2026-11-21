@@ -57,3 +57,9 @@ CREATE TABLE IF NOT EXISTS `laporan` (
   INDEX `idx_lokasi` (`lokasiDari`),
   INDEX `idx_jenis` (`jenisAlatNama`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- 5. Data Default Pengguna (User: user / Password: user123)
+INSERT INTO `users` (`id`, `username`, `password`, `nama`, `role`) 
+VALUES (1, 'user', 'user123', 'User', 'Admin')
+ON DUPLICATE KEY UPDATE `username`='user', `password`='user123';
+

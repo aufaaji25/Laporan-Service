@@ -80,8 +80,8 @@ pm2 startup
 ---
 
 ## 5. Login Default
-- **Username**: aufaaji25
-- **Password**: *Muff@ind0Komunikasi
+- **Username**: user
+- **Password**: user123
 
 ---
 
